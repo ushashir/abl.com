@@ -64,7 +64,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -87,7 +87,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                             <a class="nav-link" href="#services-section">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.php">Register</a>
+                            <a class="nav-link" href="inc/register.php">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-section">Contact</a>
@@ -149,9 +149,9 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <p class="lead"> We offer condusive study enviroment with matured ambiance. Members of the
                             public
                             can
-                            <a href="register.php">register</a> and study at their comfort.</p>
+                            <a href="inc/register.php">register</a> and study at their comfort.</p>
                         <P class="lead">Our library hall with the capacity to accomodate
-                            up to 40 persons is also available and can be <a href="renthall.php">rented</a> for seminar
+                            up to 40 persons is also available and can be <a href="inc/renthall.php">rented</a> for seminar
                             presentations,
                             public lectures, toturial sessions or any other academic related event.</P>
                         <P class="lead">
@@ -183,11 +183,11 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title"> <a href="renthall.php">RENT OUR LIBRARY HALL</a> </h4>
+                                <h4 class="card-title"> <a href="inc/renthall.php">RENT OUR LIBRARY HALL</a> </h4>
                                 <p class="card-text">Our library hall with the capacity to accomodate
                                     up to 40 persons is also available and can be Rented for seminar presentations,
                                     public lectures, toturial sessions or any other academic related event.</p>
-                                <a href="renthall.php" class="btn btn-outline-secondary">Rent</a>
+                                <a href="inc/renthall.php" class="btn btn-outline-secondary">Rent</a>
                             </div>
                             <img class="card-imd-top" src="img/renthall2.jpg" alt="photo">
                         </div>
