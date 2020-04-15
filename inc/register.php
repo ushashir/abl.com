@@ -56,12 +56,11 @@ if(filter_has_var(INPUT_POST, 'submit')) {
   <link href="style.css" rel="stylesheet">
  
   <title>Registration  | Alexander Bernhardt Library </title>
+  
 </head>
 <body>
 
 <?php include 'header.php'?>
-  <br>  <br>  <br>  <br>
-
 
   <!-- registration form starts here -->
   <div class="container">
@@ -74,7 +73,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
               <h5> Important!</h5>
             </div>
             <h6>
-              <a href="http://s000.tinyupload.com/index.php?file_id=68063246234023313327" target="_blank">
+              <a href="termsAndConditions.php" target="_blank">
                 Read Our Terms and Conditions here!</a>
             </h6>
 
@@ -166,7 +165,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 
         <input type="submit" value="Register" class="btn btn-info btn-block">
         </form> <br> <br>
-        <a href="index.php"><strong>Return to Home Page</strong> </a>
+        <a href="index.php"><strong>Back to Home</strong> </a>
       </div>
     </div>
   </div>

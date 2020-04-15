@@ -11,13 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 <!-- Navigation -->
+-- Navigation -->
     <header id="header-nav" role="banner">
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
@@ -28,24 +29,14 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Home</a>
+                            <a class="nav-link" href="http://localhost/abl.com">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services-section">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="register.php">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-section">Contact</a>
-                        </li>
-                    </ul>
+                      
                 </div>
             </div>
         </nav>
     </header>
     <!-- Navigation -->
-
     
 </body>
 </html>

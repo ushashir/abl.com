@@ -19,22 +19,18 @@ if(filter_has_var(INPUT_POST, 'submit')) {
         } else {
             //passed
             //recipient email
-
-            //new codes
-            
-            //new codes
             $toEmail = 'info@alexanderbernhardtlibrary.com';
-            $subject = 'Contact request from'. '' .$name;
-            $body = 'Contact Message 
-                Name <p>'.$name.'</p>
-                Email <p>'.$email.'</p>
-                Message <p>'.$message.'</p>
+            $subject = 'Contact request from' .$name;
+            $body = '<h2> Contact Message </h2>
+                <h4>Name</h4><p>'.$name.'</p>
+                <h4>Email</h4><p>'.$email.'</p>
+                <h4>Message</h4><p>'.$message.'</p>
                 ';
-               $headers = "MIME-Version: 1.0" ."\r\n";
-               $headers .= "Content-Type:/html;charset=UTF-8" ."
-                //\r\n";
+                $headers = "MIME-Version: 1.0" ."\r\n";
+                $headers .= "Content-Type:/html;charset=UTF-8" ."
+                \r\n";
                 //Additonal headers
-                $headers .= "From: ". ' ' .$name. "<".$email.">". "\r\n";
+                $headers .= "From: " .$name. "<".$email.">". "\r\n";
                 if(mail($toEmail, $subject, $body, $headers)){
                     //Email Sent
                     $msg = 'Message succesfully sent';
@@ -54,27 +50,31 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home | Alexander Bernhardt Library</title>
+    <meta name="description" content="The Official Website of Alexander Bernhardt Library located at 8, Morris Street. Lagos - Nigeria. An initiative of <a href="https://alexander-bernhardt.com.ng/home">Alexander Bernhardt Grail Publishing Company</a>">
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <!--custume css-->
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
+
 <!-- Navigation -->
     <header id="header-nav" role="banner">
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Alexander Bernhardt Library </a>
+                <a class="navbar-brand" href="https://www.alexanderbernhardtlibrary.com/">Alexander Bernhardt Library </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,12 +83,27 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <li class="nav-item active">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services-section">Services</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#services-section">All</a>
+                        <a class="dropdown-item" href="#">Library Resources</a>
+                        <a class="dropdown-item" href="#">Library Facilities</a>
+                        <a class="dropdown-item" href="https://www.google.com/search?q=alexander+bernhardt+library&oq=ale&aqs=chrome.2.69i60j69i57j69i59l2j0j69i60l3.5952j0j4&sourceid=chrome&ie=UTF-8#lrd=0x103b8d22f0c7b65b:0x6561c8c28a7b0da7,1,,," target="_blank">Reviews</a>
+                        </div>
+                         <li class="nav-item">
+                            <a class="nav-link" href="inc/eresources/eresources.php">E-
+                            Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.php">Register</a>
+                            <a class="nav-link" href="inc/register.php">Register</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alexanderbernhardtlibrary.com/Blog/" target="_blank">Blog</a>
+                        </li>
+                      
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-section">Contact</a>
                         </li>
@@ -124,12 +139,9 @@ if(filter_has_var(INPUT_POST, 'submit')) {
         <div class="row jumbotron">
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
                 <p class="lead">
-                    Alexander Bernhardt library is a Special Library whose mission is to
-                    disseminate knowledge to interested members of the public through books
-                    emanating from the <a href="http://www.alexander-bernhardt.com.ng/">Alexander Bernhardt Publishing
-                        Company</a>
-                    and other related literature. In addition to this, the library environs are
-                    suitable for personal studies, and can be used to that effect.
+                    
+                    Alexander Bernhardt Library is an initiative of <a href="http://www.alexander-bernhardt.com.ng/">Alexander Bernhardt Publishing
+                        Company</a>. The Library is committed to making available books emanating from <a href="http://www.alexander-bernhardt.com.ng/">Alexander Bernhardt Publishing Company</a> to general members of the public. In addition to this, the library environs are suitable for personal studies, and can be used to that effect by <a href="inc/register.php">register</a>ed members of the public.
                 </p>
             </div>
         </div>
@@ -149,9 +161,9 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <p class="lead"> We offer condusive study enviroment with matured ambiance. Members of the
                             public
                             can
-                            <a href="register.php">register</a> and study at their comfort.</p>
+                            <a href="inc/register.php">register</a> and study at their comfort.</p>
                         <P class="lead">Our library hall with the capacity to accomodate
-                            up to 40 persons is also available and can be <a href="renthall.php">rented</a> for seminar
+                            up to 40 persons is also available and can be <a href="inc/renthall.php">rented</a> for seminar
                             presentations,
                             public lectures, toturial sessions or any other academic related event.</P>
                         <P class="lead">
@@ -170,24 +182,23 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">NEWS ALERT</h4>
-                                <p class="card-text">The seminar to mark the one year opening of Alexander Bernhardt 
-                                Library was succesfully held on the 3rd of August, 2019 with the topic: 'Strive for Independence: 
-                                Pathways to Self-reliance' delivered by Mr. Kolapo Lawson (Former Group Chairman EcoBank)</p>
-                                <a href="https://www.facebook.com/events/474176280075182/"
-                                    class="btn btn-outline-secondary">Read more...</a>
+                                <h4 class="card-title"> <a href="https://alexanderbernhardtlibrary.com/Blog/">NEWS ALERT</a> </h4>
+                                <p class="card-text"><b>COVID-19: LIBRARY SHUT DOWN TO CONTINUE. </b> <br> The library will continue to be shut down pending when the general lock down from government is over. It will be recalled that the ...
+</p>
+                               <a href="https://alexanderbernhardtlibrary.com/Blog/2020/04/13/covid-19-library-shut-down-to-continue/" 
+                                    class="btn btn-outline-secondary">Read More here...</a> 
                             </div>
-                            <img class="card-imd-top" src="img/seminar1.jpg" alt="photo">
+                            <img class="card-imd-top" src="img/library_charges.jpg" alt="image">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title"> <a href="renthall.php">RENT OUR LIBRARY HALL</a> </h4>
-                                <p class="card-text">Our library hall with the capacity to accomodate
+                                <h4 class="card-title"> <a href="https://alexanderbernhardtlibrary.com/Blog/2020/01/11/rent-a-portable-place-for-your-conference/">RENT OUR LIBRARY HALL</a> </h4>
+                                <p class="card-text">Our library hall with the capacity to accommodate
                                     up to 40 persons is also available and can be Rented for seminar presentations,
                                     public lectures, toturial sessions or any other academic related event.</p>
-                                <a href="renthall.php" class="btn btn-outline-secondary">Rent</a>
+                                <a href="inc/renthall.php" class="btn btn-outline-secondary">Rent Here</a>
                             </div>
                             <img class="card-imd-top" src="img/renthall2.jpg" alt="photo">
                         </div>
@@ -197,7 +208,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                             <div class="card-body">
                                 <h4 class="card-title">OPENING/CLOSING HOURS</h4>
                                 <p class="card-text">8am - 6pm, Monday - Friday</p>
-                                <p class="card-text"> 9pm - 3pm, Saturdays</p>
+                                <p class="card-text"> 9am - 3pm, Saturdays</p>
                                 <p class="card-text">Closed, Sunday</p>
                                 <p>Note: Events can be booked on Sundays</p>
                                 <br> <br>
@@ -225,7 +236,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                             hall.</p>
 
                         <br>
-                        <a href="#" class="btn btn-primary">Read more </a>
+                        <a href="https://alexanderbernhardtlibrary.com/Blog/2019/12/12/alexander-bernhardt-library-series/" class="btn btn-primary">Read more </a>
                     </div>
                     <div class="col-lg-6">
                         <img src="img/ablseries.jpg" class="img-fluid">
@@ -306,9 +317,9 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <div class="col-12 social padding">
                             <a href="https://www.facebook.com/alexbernlibrary"> <i class="fab fa-facebook"></i> </a>
                             <a href="https://twitter.com/ab_library"> <i class="fab fa-twitter"></i> </a>
-                            <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
-                            <a href="#"> <i class="fab fa-instagram"></i> </a>
-                            <a href="#"> <i class="fab fa-youtube"></i> </a>
+                            <!--<a href="#"> <i class="fab fa-google-plus-g"></i> </a>-->
+                            <!--<a href="#"> <i class="fab fa-instagram"></i> </a>-->
+                            <!--<a href="#"> <i class="fab fa-youtube"></i> </a>-->
                         </div>
                     </div>
                     </div>
@@ -318,16 +329,46 @@ if(filter_has_var(INPUT_POST, 'submit')) {
         </div>
     </section>
     <!--END CONTACT SECTION -->
-
-
     <!--- Footer -->
-    <footer>    
-                <div class="col-12 text-center">
-                    <hr class="light">
-                    <h5> All rights reserved. | Alexander Bernhardt Library. &copy; 2019.  Powered by  <a href="http://nawillcorporation.com">nawill</a></h5>
+    <footer>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                  <strong><p>SOCIAL</p></strong>
+                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                    <br>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                    <!-- <a href="#"> <i class="fab fa-instagram"></i> </a>
+                    <a href="#"> <i class="fab fa-youtube"></i> </a> -->
+                  </div>
+                  <div class="col">
+                    <p><strong>EXPLORE LINKS</strong> </p> 
+                    <a href="index.php">Home</a> <br> 
+                    <a href="#services">Services</a> <br>
+                    <a href="inc/eresources.php">E-Resources</a> <br>
+                    <br>     
+                  </div>
+                  <div class="col">
+                      <br>
+                      <br>
+                    <a href="inc/register.php">Register</a> <br>
+                    <a href="https://alexanderbernhardtlibrary.com/Blog/"target="_blank">Blog</a> <br>
+                    <a href="https://www.google.com/search?q=alexander+bernhardt+library&oq=a&aqs=chrome.
+                    1.69i60j69i59l2j69i60l2j5l3.5021j0j7&sourceid=chrome&ie=UTF-8#lrd=0x103b8d22f0c7b65b:0x6561c8c28a7b0da7,1,,," 
+                    target="_blank">Reviews</a> 
+                    <br>
                 </div>
-          
-    </footer>
+                  <div class="col">
+                    <strong><p>CONTACTS</p></strong>
+                    <p><img src="img/f-address.png" alt="image">8 Morris Street. Yaba. Lagos - Nigeria</p>
+                    <p><img src="img/f-phone.png" alt="image">+234 813 857 2304</p>
+                    <p><img src="img/f-mail.png" alt="image">info@alexanderbernhardtlibrary.com</p>
+                    <p><img src="img/f-hours.png" alt="image">Mon - Sat: 8am - 6pm</p>
+                  </div>
+                </div>
+                <br>
+                <h5> All rights reserved. | Alexander Bernhardt Library. &copy; 2019.  Powered by  <a href="http://nawipedia.com">nawill</a></h5>
+    </footer>  
 
     <!-- <script src="assets/scripts/custom.js"></script> -->
     
