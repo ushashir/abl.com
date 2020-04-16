@@ -10,15 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 <?php include 'header.php'?>
        <!--- Two Column Section -->
-       <div class="container-fluid padding">
+       <div class="container">
         <div class="row padding">
             <div class="col-md-12 col-lg-6">
-                <a href="http://localhost/abl.com/">Back to Home</a>
+                <a href="register.php">Back to Register</a>
                 <h2>Our Terms and Conditions</h2>
                 <br>
                 
@@ -76,13 +76,13 @@
                     </tr>
                     <tr>
                       <td>Monthly</td>
-                      <td>N1000</td>
-                      <td>N2000</td>
+                      <td>N1500</td>
+                      <td>N3000</td>
                     </tr>
                     <tr>
                         <td>3 Months</td>
-                        <td>N2500</td>
-                        <td>N5000</td>
+                        <td>N3500</td>
+                        <td>N7000</td>
                       </tr>
                   </table>
                   <p> <b>Note:</b> Students here refers to undergraduate only</p>
@@ -92,7 +92,7 @@
                   <p>9am - 3pm Saturdays</p>
                   <p>Closed for Sundays</p>
                   <br> 
-                  <a href="http://localhost/abl.com/">Back to Home</a>
+                  <a href="register.php">Back to Register</a>
             </div>
         </div>
     </div>

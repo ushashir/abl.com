@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="style.css" rel="stylesheet">
  
   <title>E-Resources  | Alexander Bernhardt Library </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--custume css-->
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
 
 <?php include 'header.php'?>
-  <br>  <br> 
-<!--- Meet the team -->
-<div class="container-fluid padding">
-            <div class="row welcome text-centre">
-                <div class="col-12">
-                    <h2  class="display-4">Welcome to our E-Library Services</h2 >
-                    <hr>
+  
+<div class="container">
 
-                </div>
-            </div>
-        </div>
+    <h2>Welcome | Alexander Bernhardt Library E-Library Services Page</h2 >
 
+    <hr>
 
+        
         <!--- Cards -->
         <div class="container-fluid padding">
             <div class="row padding">
@@ -65,9 +66,7 @@
                     </div>
                 </div>
                 
-                
-            </div>
-        </div>
+</div>
      
   
   
