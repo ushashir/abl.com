@@ -12,7 +12,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    
-    <link href="style.css" rel="stylesheet">
+    <link href="inc/style.css" rel="stylesheet">
  
 
 </head>
@@ -78,7 +78,7 @@
             <input type="submit" value="Rent" class="btn btn-info btn-block">
             </form> <br> <br>
 
-            <a href="index.php"><strong>Return to Home Page</strong> </a>
+            <a href="../index.php"><strong>Return Home</strong> </a>
         </div>
     </div>
     </div>

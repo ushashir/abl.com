@@ -30,7 +30,7 @@
                   <div class="col">
                     <p><strong>EXPLORE LINKS</strong> </p> 
                     <a href="../index.php">Home</a> <br> 
-                    <a href="#">Services</a> <br>
+                    <a href="renthall.php">Rent Hall</a> <br>
                     <a href="eresources.php">E-Resources</a> <br>
                     <br>     
                   </div>

@@ -89,6 +89,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#services-section">All</a>
+                        <a class="dropdown-item" href="inc/renthall.php">Rent Hall</a>
                         <a class="dropdown-item" href="#">Library Resources</a>
                         <a class="dropdown-item" href="#">Library Facilities</a>
                         <a class="dropdown-item" href="https://www.google.com/search?q=alexander+bernhardt+library&oq=ale&aqs=chrome.2.69i60j69i57j69i59l2j0j69i60l3.5952j0j4&sourceid=chrome&ie=UTF-8#lrd=0x103b8d22f0c7b65b:0x6561c8c28a7b0da7,1,,," target="_blank">Reviews</a>
@@ -348,7 +349,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                   <div class="col">
                     <p><strong>EXPLORE LINKS</strong> </p> 
                     <a href="index.php">Home</a> <br> 
-                    <a href="#services">Services</a> <br>
+                    <a href="inc/renthall.php">Rent Hall</a> <br>
                     <a href="inc/eresources.php">E-Resources</a> <br>
                     <br>     
                   </div>
