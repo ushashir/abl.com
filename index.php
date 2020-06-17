@@ -57,13 +57,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
     <meta name="description" content="The Official Website of Alexander Bernhardt Library located at 8, Morris Street. Lagos - Nigeria. An initiative of <a href="https://alexander-bernhardt.com.ng/home">Alexander Bernhardt Grail Publishing Company</a>">
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!--custume css-->
-    <link href="css/style.css" rel="stylesheet">
+  
 
 </head>
 
@@ -188,12 +182,15 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title"> <a href="https://alexanderbernhardtlibrary.com/Blog/">NEWS ALERT</a> </h4>
-                                <p class="card-text"><b>COVID-19: LIBRARY SHUT DOWN TO CONTINUE. </b> <br> The library will continue to be shut down pending when the general lock down from government is over. It will be recalled that the ...
-</p>
-                               <a href="https://alexanderbernhardtlibrary.com/Blog/2020/04/13/covid-19-library-shut-down-to-continue/" 
+                                <p class="card-text"><b>Learn German Language: Alexander Bernhardt Library in partnership 
+                                    with Demut Language Hub to start teaching German. </b> 
+                                <br> Alexander Bernhardt Library has concluded plans to partner with 
+                                a high profile German School publicly known as Demut Language Hub to start teaching German Language to ...
+                            </p>
+                               <a href="https://alexanderbernhardtlibrary.com/Blog/2020/06/16/learn-german-language-alexander-bernhardt-library-in-partnership-with-demut-language-hub-to-start-teaching-german/" 
                                     class="btn btn-outline-secondary">Read More here...</a> 
                             </div>
-                            <img class="card-imd-top" src="img/library_charges.jpg" alt="image">
+                            <img class="card-imd-top" src="img/demut-language-hub.jpg" alt="image">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -212,7 +209,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">OPENING/CLOSING HOURS</h4>
-                                <p class="card-text">8am - 6pm, Monday - Friday</p>
+                                <p class="card-text">9am - 5pm, Monday - Friday</p>
                                 <p class="card-text"> 9am - 3pm, Saturdays</p>
                                 <p class="card-text">Closed, Sunday</p>
                                 <p>Note: Events can be booked on Sundays</p>
@@ -340,9 +337,9 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                 <div class="row">
                   <div class="col">
                   <strong><p>SOCIAL</p></strong>
-                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                    <a href="https://www.facebook.com/alexbernlibrary" target="_blank"> <i class="fab fa-facebook"></i> </a>
                     <br>
-                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                    <a href="https://twitter.com/ab_library" target="_blank"> <i class="fab fa-twitter"></i> </a>
                     <!-- <a href="#"> <i class="fab fa-instagram"></i> </a>
                     <a href="#"> <i class="fab fa-youtube"></i> </a> -->
                   </div>
@@ -368,7 +365,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                     8 Morris Street. Yaba. Lagos - Nigeria <br>
                     +234 813 857 2304 <br>
                     info@alexanderbernhardtlibrary.com <br>
-                    Mon - Sat: 8am - 6pm <img>
+                    Mon - Sat: 9am - 5pm <img>
                   </div>
                   <br>
                 <hr>
@@ -379,7 +376,14 @@ if(filter_has_var(INPUT_POST, 'submit')) {
                 
     </footer>  
 
-    <!-- <script src="assets/scripts/custom.js"></script> -->
+<!-- css and js links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--custume css-->
+    <link href="css/style.css" rel="stylesheet">
     
 </body>
 
